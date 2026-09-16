@@ -6,8 +6,8 @@
    Complete the TODOs below to style the journal.
    Refer to instructions for detailed guidance.
    
-   Author: [Your Name Here]
-   Date: 02/02/2026
+   Author: Kenny Cao and Brooke Hasty
+   Date: 09/16/2026
 ============================================ */
 
 /* ============================================
@@ -40,6 +40,9 @@ body {
 
 #main-container {
     /* YOUR CODE HERE */
+    width: 960px;
+    margin: 20px auto;
+    background: rgb(221, 216, 216);
     
 }
 
@@ -52,8 +55,18 @@ body {
 
 #header-box {
     /* YOUR CODE HERE */
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    text-align: center;
     
 }
+
+#header-box h1 {
+    font-size: 2em;
+}
+
+
 
 /* ============================================
    STEP 4: CREATE TWO-COLUMN LAYOUT
@@ -64,12 +77,17 @@ body {
 
 #sidebar {
     /* YOUR CODE HERE */
-    
+    float: left;
+    width: 25%;
+    padding: 20px;
+    background-color: #f0f0f0;
 }
 
 #content-area {
     /* YOUR CODE HERE */
-    
+    float: left;
+    width: 75%;
+    padding: 20px;
 }
 
 /* ============================================
@@ -80,6 +98,9 @@ body {
 
 #main-container::after {
     /* YOUR CODE HERE */
+    content: "";
+    display: table;
+    clear: both;
     
 }
 
@@ -91,13 +112,35 @@ body {
 
 .journal-entry {
     /* YOUR CODE HERE */
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
     
 }
+
 
 .entry-image {
     /* YOUR CODE HERE */
     /* Add picture frame effect */
+    float: left;
+    margin-right: 15px;
+    border: 12px solid #fff;
+    box-shadow: 0 0 0 2px #333;
+    padding: 8px;
+    background: white;
     
+}
+
+.entry-title {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.entry-date {
+    color: #888;
+    font-size: 0.9em;
 }
 
 /* ============================================
@@ -107,6 +150,18 @@ body {
 ============================================ */
 
 @media (max-width: 768px) {
-    /* YOUR CODE HERE */
+    #main-container {
+        width: 100%;
+        margin: 0;
+    }
     
+    #sidebar,
+    #content-area {
+        float: none;
+        width: 100%;
+    }
+    
+    #sidebar {
+        margin-bottom: 20px;
+    }
 }
