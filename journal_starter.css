@@ -39,10 +39,9 @@ body {
 ============================================ */
 
 #main-container {
-    /* YOUR CODE HERE */
     width: 960px;
     margin: 20px auto;
-    background: rgb(221, 216, 216);
+    background: white;
     
 }
 
@@ -76,18 +75,18 @@ body {
 ============================================ */
 
 #sidebar {
-    /* YOUR CODE HERE */
     float: left;
     width: 25%;
     padding: 20px;
     background-color: #f0f0f0;
+    
 }
 
 #content-area {
-    /* YOUR CODE HERE */
     float: left;
     width: 75%;
     padding: 20px;
+    
 }
 
 /* ============================================
@@ -111,7 +110,6 @@ body {
 ============================================ */
 
 .journal-entry {
-    /* YOUR CODE HERE */
     background-color: #fff;
     margin-bottom: 20px;
     padding: 15px;
@@ -122,6 +120,12 @@ body {
 
 
 .entry-image {
+    float: left;
+    margin-right: 15px;
+    border: 12px solid #fff;
+    box-shadow: 0 0 0 2px #333;
+    padding: 8px;
+    background: white;
     /* YOUR CODE HERE */
     /* Add picture frame effect */
     float: left;
