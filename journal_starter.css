@@ -14,6 +14,19 @@
    STEP 1: BASE RESET & TYPOGRAPHY
    ============================================ */
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+:root {
+    --primary-color: #F0F8FF;
+    --secondary-color: #CAE9F5;
+    --text-color: #41619B;
+    --accent-color: #86C5D8;
+    --test: ;
+    
+}
+   
+
 * {
     margin: 0;
     padding: 0;
@@ -21,10 +34,10 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Oswald', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f5f5f5;
+    color: var(--text-color);
+    background-color: var(--accent-color);
     padding: 20px;
 }
 
@@ -41,7 +54,7 @@ body {
 #main-container {
     width: 960px;
     margin: 20px auto;
-    background: white;
+    background: var(--primary-color);
     
 }
 
@@ -54,8 +67,8 @@ body {
 
 #header-box {
     /* YOUR CODE HERE */
-    background-color: #4a90e2;
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
     padding: 20px;
     text-align: center;
     
@@ -78,7 +91,7 @@ body {
     float: left;
     width: 25%;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: var(--primary-color);
     /*For Kenny's Hover*/
     transition: background-color 0.3s ease, box-shadow 0.4s ease;
 }
@@ -116,7 +129,7 @@ body {
 ============================================ */
 
 .journal-entry {
-    background-color: #fff;
+    background-color: var(--secondary-color);
     margin-bottom: 20px;
     padding: 15px;
     border: 1px solid #ddd;
@@ -134,14 +147,14 @@ body {
 }
 
 .entry-image {
-    /* YOUR CODE HERE */
-    /* Add picture frame effect */
     float: left;
     margin-right: 15px;
     border: 12px solid #fff;
-    box-shadow: 0 0 0 2px #333;
+    box-shadow: 0 0 0 2px var(--text-color);
     padding: 8px;
     background: white;
+    /* YOUR CODE HERE */
+    /* Add picture frame effect */
     /*For Kenny's Hover*/
     transition: transform 0.3s ease; 
 }
@@ -151,12 +164,12 @@ body {
 }
 
 .entry-title {
-    color: #333;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
 .entry-date {
-    color: #888;
+    color: var(--text-color);
     font-size: 0.9em;
 }
 
